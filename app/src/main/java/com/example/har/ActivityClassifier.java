@@ -7,10 +7,10 @@ import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
 public class ActivityClassifier {
 
     private static final String MODEL_FILE = "model.pb";
-    private static final String INPUT_NODE = "lstm_1_input";
-    private static final String[] OUTPUT_NODES = {"output/Softmax"};
-    private static final String OUTPUT_NODE = "output/Softmax";
-    private static final long[] INPUT_SIZE = {1, 100, 9};
+    private static final String INPUT_NODE = "LSTM_1_input";
+    private static final String[] OUTPUT_NODES = {"Dense_2/Softmax"};
+    private static final String OUTPUT_NODE = "Dense_2/Softmax";
+    private static final long[] INPUT_SIZE = {1, 100, 12};
     private static final int OUTPUT_SIZE = 7;
 
     static {
